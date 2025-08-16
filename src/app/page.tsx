@@ -329,7 +329,7 @@ export default function ApneiaQuestionario() {
               <div className="space-y-3">
                 <button
                   onClick={redirectToWhatsApp}
-                  className={`w-full font-semibold py-3 px-5 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] group ${hasApneiaSymptoms ? 'bg-[#00386C] hover:bg-[#00264a] text-white' : 'bg-[#128C7E] hover:bg-[#075E54] text-white'}`}
+                  className={`w-full font-semibold py-3 px-5 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] group ${hasApneiaSymptoms ? 'bg-[#128C7E] hover:bg-[#075E54] text-white' : 'bg-[#128C7E] hover:bg-[#075E54] text-white'}`}
                 >
                   <svg
                     className="w-5 h-5 group-hover:scale-110 transition-transform"
