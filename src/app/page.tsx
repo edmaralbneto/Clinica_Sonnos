@@ -306,26 +306,21 @@ export default function ApneiaQuestionario() {
                 ) : (
                   <div>
                     <h3 className="text-xl font-bold text-[#00386C] mb-3">
-                      ✅ Resultado Tranquilizador
+                      ✅ Sem sinais de alerta
                     </h3>
                     <p className="text-[#00386C] text-base leading-relaxed mb-4">
-                      Você apresentou{" "}
-                      <span className="font-semibold text-[#00386C]">
-                        {yesCount} sintomas
-                      </span>
-                      , o que não indica sinais significativos de apneia do sono
-                      no momento.
+                      Você apresentou <span className="font-semibold text-[#00386C]">{yesCount} sintomas</span> entre as 13 perguntas do teste, o que não indica sinais significativos de apneia do sono no momento.
                     </p>
-                    <div className="bg-[#00386C]/10 border border-[#00386C]/30 rounded-xl p-4">
+                    <div className="bg-[#00386C]/10 border border-[#00386C]/30 rounded-xl p-4 mb-3">
                       <p className="text-[#00386C] text-sm">
-                        Continue cuidando da sua saúde do sono! A{" "}
-                        <span className="font-semibold">Clínica Sonnos</span>
-                        <br />
-                        oferece consultas preventivas para manter sua qualidade
-                        de vida.
-                        <br />
+                        Continue cuidando da sua saúde do sono!<br />
+                        A <span className="font-semibold">Clínica Sonnos</span> oferece consultas e acompanhamento especializado para que seu sono continue adequado.
                       </p>
                     </div>
+                    <ul className="text-[#00386C] list-disc pl-5">
+                      <li>Para orientações personalizadas, fale com um de nossos especialistas.</li>
+                      <li>Lembre-se: este teste é apenas indicativo. Para um diagnóstico preciso, é fundamental passar por avaliação profissional.</li>
+                    </ul>
                   </div>
                 )}
               </div>
