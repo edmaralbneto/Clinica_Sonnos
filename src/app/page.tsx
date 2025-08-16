@@ -149,17 +149,17 @@ export default function ApneiaQuestionario() {
     return (
       <>
         <Header />
-        <div className="min-h-screen w-full flex items-center justify-center overflow-hidden pt-16 bg-gradient-to-br from-blue-600 via-white to-yellow-400">
+  <div className="min-h-screen w-full flex items-center justify-center overflow-hidden pt-16 bg-white">
           <div className="flex flex-col items-center space-y-4">
             <div className="relative">
               <div className="w-16 h-16 border-4 border-yellow-200 border-t-yellow-500 rounded-full animate-spin"></div>
               <div className="absolute inset-0 w-16 h-16 border-4 border-transparent border-b-amber-400 rounded-full animate-spin-reverse"></div>
             </div>
             <div className="text-center">
-              <h2 className="text-black text-xl font-semibold mb-1">
+              <h2 className="text-white text-xl font-semibold mb-1">
                 Analisando Respostas
               </h2>
-              <p className="text-black text-sm">
+              <p className="text-yellow-200 text-sm">
                 Preparando seu resultado personalizado...
               </p>
             </div>
@@ -183,7 +183,7 @@ export default function ApneiaQuestionario() {
     return (
       <>
         <Header />
-  <div className="min-h-screen w-full flex items-center justify-center p-3 overflow-hidden pt-16 bg-gradient-to-br from-blue-600 via-white to-yellow-400">
+  <div className="min-h-screen w-full flex items-center justify-center p-3 overflow-hidden pt-16 bg-white">
           {/* Content */}
           <div className="max-w-xl w-full">
             {/* Header */}
@@ -198,30 +198,29 @@ export default function ApneiaQuestionario() {
                   priority
                 />
               </div>
-              <h1 className="text-3xl font-bold bg-gradient-to-r from-white via-yellow-200 to-amber-200 bg-clip-text text-transparent mb-2">
+              <h1 className="text-3xl font-bold mb-2 text-[#00386C]">
                 Resultado do Teste
               </h1>
-              <div className="w-16 h-0.5 bg-gradient-to-r from-yellow-500 to-amber-500 mx-auto rounded-full"></div>
+              <div className="w-16 h-0.5 bg-[#B69557] mx-auto rounded-full"></div>
             </div>
 
             {/* Card de resultado */}
-            <div className="bg-black/40 backdrop-blur-xl rounded-2xl border border-yellow-500/30 p-6 shadow-2xl">
+            <div className="bg-white rounded-2xl border border-[#B69557] p-6 shadow-2xl">
               {/* Estatísticas do teste */}
               <div className="text-center mb-6">
-                <div className="inline-flex items-center space-x-4 bg-black/20  
-                 rounded-xl p-3 mb-4">
+                <div className="inline-flex items-center space-x-4 bg-white rounded-xl p-3 mb-4 border border-[#B69557]/40">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-yellow-400">
+                    <div className="text-2xl font-bold text-[#B69557]">
                       {yesCount}
                     </div>
-                    <div className="text-xs text-white/70">Sintomas</div>
+                    <div className="text-xs text-[#00386C]">Sintomas</div>
                   </div>
-                  <div className="text-white/50">de</div>
+                  <div className="text-[#00386C]">de</div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-white">
+                    <div className="text-2xl font-bold text-[#00386C]">
                       {questions.length}
                     </div>
-                    <div className="text-xs text-white/70">Perguntas</div>
+                    <div className="text-xs text-[#00386C]">Perguntas</div>
                   </div>
                 </div>
               </div>
@@ -231,8 +230,8 @@ export default function ApneiaQuestionario() {
                 <div
                   className={`w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 ${
                     hasApneiaSymptoms
-                      ? "bg-gradient-to-r from-amber-500/80 to-orange-600/80"
-                      : "bg-gradient-to-r from-emerald-500/80 to-green-600/80"
+                      ? "bg-[#B69557]/80"
+                      : "bg-[#00386C]/80"
                   }`}
                 >
                   <svg
@@ -264,37 +263,37 @@ export default function ApneiaQuestionario() {
               <div className="text-center mb-6">
                 {hasApneiaSymptoms ? (
                   <div>
-                    <h3 className="text-xl font-bold text-amber-300 mb-3">
+                    <h3 className="text-xl font-bold text-[#B69557] mb-3">
                       ⚠️ Atenção
                     </h3>
-                    <p className="text-white/90 text-base leading-relaxed mb-4">
+                    <p className="text-[#00386C] text-base leading-relaxed mb-4">
                       Responder &quot;Sim&quot; a{" "}
-                      <span className="font-semibold text-amber-300">
+                      <span className="font-semibold text-[#B69557]">
                         4 ou mais perguntas
                       </span>{" "}
                       pode indicar um possível distúrbio do sono, como a Apneia
                       Obstrutiva do Sono (AOS).
                     </p>
-                    <div className="bg-amber-500/20 border border-amber-500/30 rounded-xl p-4 mb-4">
-                      <h4 className="text-amber-200 font-semibold mb-2">
+                    <div className="bg-[#B69557]/10 border border-[#B69557]/30 rounded-xl p-4 mb-4">
+                      <h4 className="text-[#B69557] font-semibold mb-2">
                         Diferenças importantes:
                       </h4>
                       <div className="text-left space-y-2 text-sm">
-                        <p className="text-amber-200">
+                        <p className="text-[#B69557]">
                           <span className="font-semibold">👩 Mulheres:</span> A
                           AOS pode se manifestar de forma atípica, com fadiga,
                           insônia, cefaleia e alterações de humor, mesmo sem
                           ronco evidente ou sonolência excessiva.
                         </p>
-                        <p className="text-amber-200">
+                        <p className="text-[#B69557]">
                           <span className="font-semibold">👨 Homens:</span> O
                           ronco alto e pausas respiratórias são mais frequentes,
                           mas os sintomas diurnos podem ser semelhantes.
                         </p>
                       </div>
                     </div>
-                    <div className="bg-red-500/20 border border-red-500/30 rounded-xl p-4">
-                      <p className="text-red-200 text-sm">
+                    <div className="bg-[#00386C]/10 border border-[#00386C]/30 rounded-xl p-4">
+                      <p className="text-[#00386C] text-sm">
                         É{" "}
                         <span className="font-semibold">
                           altamente recomendado
@@ -306,27 +305,22 @@ export default function ApneiaQuestionario() {
                   </div>
                 ) : (
                   <div>
-                    <h3 className="text-xl font-bold text-emerald-300 mb-3">
-                      ✅ Resultado Tranquilizador
+                    <h3 className="text-xl font-bold text-[#00386C] mb-3">
+                      ✅ Sem sinais de alerta
                     </h3>
-                    <p className="text-white/90 text-base leading-relaxed mb-4">
-                      Você apresentou{" "}
-                      <span className="font-semibold text-emerald-300">
-                        {yesCount} sintomas
-                      </span>
-                      , o que não indica sinais significativos de apneia do sono
-                      no momento.
+                    <p className="text-[#00386C] text-base leading-relaxed mb-4">
+                      Você apresentou <span className="font-semibold text-[#00386C]">{yesCount} sintomas</span> entre as 13 perguntas do teste, o que não indica sinais significativos de apneia do sono no momento.
                     </p>
-                    <div className="bg-emerald-500/20 border border-emerald-500/30 rounded-xl p-4">
-                      <p className="text-emerald-200 text-sm">
-                        Continue cuidando da sua saúde do sono! A{" "}
-                        <span className="font-semibold">Clínica Sonnos</span>
-                        <br />
-                        oferece consultas preventivas para manter sua qualidade
-                        de vida.
-                        <br />
+                    <div className="bg-[#00386C]/10 border border-[#00386C]/30 rounded-xl p-4 mb-3">
+                      <p className="text-[#00386C] text-sm">
+                        Continue cuidando da sua saúde do sono!<br />
+                        A <span className="font-semibold">Clínica Sonnos</span> oferece consultas e acompanhamento especializado para que seu sono continue adequado.
                       </p>
                     </div>
+                    <ul className="text-[#00386C] list-disc pl-5">
+                      <li>Para orientações personalizadas, fale com um de nossos especialistas.</li>
+                      <li>Lembre-se: este teste é apenas indicativo. Para um diagnóstico preciso, é fundamental passar por avaliação profissional.</li>
+                    </ul>
                   </div>
                 )}
               </div>
@@ -335,7 +329,7 @@ export default function ApneiaQuestionario() {
               <div className="space-y-3">
                 <button
                   onClick={redirectToWhatsApp}
-                  className="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-semibold py-3 px-5 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] group"
+                  className={`w-full font-semibold py-3 px-5 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] group ${hasApneiaSymptoms ? 'bg-[#00386C] hover:bg-[#00264a] text-white' : 'bg-[#128C7E] hover:bg-[#075E54] text-white'}`}
                 >
                   <svg
                     className="w-5 h-5 group-hover:scale-110 transition-transform"
@@ -353,15 +347,15 @@ export default function ApneiaQuestionario() {
 
                 <button
                   onClick={resetQuiz}
-                  className="w-full bg-black/20 border border-yellow-500/30 hover:bg-black/60 text-white font-medium py-3 px-5 rounded-xl transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+                  className="w-full bg-[#B69557] border border-[#B69557] hover:bg-[#a48445] text-white font-medium py-3 px-5 rounded-xl transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
                 >
                   Refazer Teste
                 </button>
               </div>
 
               {/* Disclaimer compacto */}
-              <div className="mt-4 p-3 bg-black/20 rounded-xl border border-yellow-500/20">
-                <p className="text-xs text-white/70 flex items-start">
+              <div className="mt-4 p-3 bg-[#00386C]/10 rounded-xl border border-[#00386C]/20">
+                <p className="text-xs text-[#00386C] flex items-start">
                   <svg
                     className="w-4 h-4 mr-2 text-yellow-400 flex-shrink-0 mt-0.5"
                     fill="none"
@@ -391,7 +385,7 @@ export default function ApneiaQuestionario() {
   return (
     <>
       <Header />
-  <div className="min-h-screen w-full flex items-center justify-center p-3 overflow-hidden pt-16 bg-gradient-to-br from-blue-600 via-white to-yellow-400">
+  <div className="min-h-screen w-full flex items-center justify-center p-3 overflow-hidden pt-16 bg-white">
         {/* Content */}
         <div className="max-w-xl w-full">
           {/* Header compacto */}
@@ -406,10 +400,10 @@ export default function ApneiaQuestionario() {
                 priority
               />
             </div>
-            <h1 className="text-3xl font-bold text-black mb-3">
+            <h1 className="text-3xl font-bold mb-3 text-[#00386C]">
               Seu sono está afetando sua saúde?
             </h1>
-            <p className="text-base text-black mb-4">
+            <p className="text-base mb-4 text-[#00386C]">
               Responda ao questionário abaixo e descubra.
             </p>
             <div className="w-16 h-0.5 bg-gradient-to-r from-yellow-500 to-amber-500 mx-auto rounded-full"></div>
@@ -418,7 +412,7 @@ export default function ApneiaQuestionario() {
           {/* Progress bar compacto */}
           <div className="mb-6">
             <div className="relative">
-              <div className="h-1.5 bg-black/20 rounded-full overflow-hidden border border-yellow-500/20">
+              <div className="h-1.5 bg-black/30 rounded-full overflow-hidden border border-yellow-500/20">
                 <div
                   className="h-full bg-gradient-to-r from-yellow-500 to-amber-500 rounded-full transition-all duration-700 ease-out"
                   style={{
@@ -440,57 +434,56 @@ export default function ApneiaQuestionario() {
           </div>
 
           {/* Card da pergunta compacto */}
-          <div className="bg-black/80 backdrop-blur-xl rounded-2xl border border-yellow-500/30 p-6 shadow-2xl">
+          <div className="bg-white rounded-2xl border border-[#B69557] p-6 shadow-2xl text-[#00386C]">
             <div key={currentQuestion}>
-              <h2 className="text-2xl font-semibold text-white mb-6 text-center leading-relaxed">
+              <h2 className="text-2xl font-semibold mb-6 text-center leading-relaxed">
                 {questions[currentQuestion].text}
               </h2>
 
               <div className="grid grid-cols-1 gap-3">
-                <div className="flex flex-row gap-2">
-                  <button
-                    onClick={() => handleAnswer("yes")}
-                    className="w-full group bg-black/10 border border-gray-700 text-white font-bold py-4 px-3 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 shadow hover:scale-[1.03] active:scale-[0.98] hover:border-yellow-400 hover:shadow-lg min-h-[56px] mb-0"
-                  >
-                    <div className="w-6 h-6 bg-black/80 rounded-full flex items-center justify-center group-hover:scale-105 transition-transform border border-gray-700 group-hover:border-yellow-400">
-                      <svg
-                        className="w-5 h-5 text-yellow-400 group-hover:text-yellow-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                    </div>
-                    <span className="text-base">Sim</span>
-                  </button>
-                  <button
-                    onClick={() => handleAnswer("no")}
-                    className="w-full group bg-black/20 border border-gray-700 text-white font-bold py-4 px-3 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 shadow hover:scale-[1.03] active:scale-[0.98] hover:border-yellow-400 hover:shadow-lg min-h-[56px]"
-                  >
-                    <div className="w-6 h-6 bg-black/80 rounded-full flex items-center justify-center group-hover:scale-105 transition-transform border border-gray-700 group-hover:border-yellow-400">
-                      <svg
-                        className="w-5 h-5 text-yellow-400 group-hover:text-yellow-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M6 18L18 6M6 6l12 12"
-                        />
-                      </svg>
-                    </div>
-                    <span className="text-base">Não</span>
-                  </button>
-                </div>
+                <button
+                  onClick={() => handleAnswer("yes")}
+                  className="group bg-[#B69557] border border-[#B69557] text-white font-bold py-5 px-8 rounded-xl transition-all duration-300 flex items-center justify-center space-x-3 shadow-lg hover:scale-[1.04] active:scale-[0.98] hover:bg-[#a48445] hover:border-[#a48445]"
+                >
+                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform border border-[#B69557] group-hover:border-[#a48445]">
+                    <svg
+                      className="w-5 h-5 text-[#B69557] group-hover:text-[#a48445]"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </div>
+                  <span className="text-lg">Sim</span>
+                </button>
+
+                <button
+                  onClick={() => handleAnswer("no")}
+                  className="group bg-[#B69557] border border-[#B69557] text-white font-bold py-5 px-8 rounded-xl transition-all duration-300 flex items-center justify-center space-x-3 shadow-lg hover:scale-[1.04] active:scale-[0.98] hover:bg-[#a48445] hover:border-[#a48445]"
+                >
+                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform border border-[#B69557] group-hover:border-[#a48445]">
+                    <svg
+                      className="w-5 h-5 text-[#B69557] group-hover:text-[#a48445]"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </div>
+                  <span className="text-lg">Não</span>
+                </button>
               </div>
             </div>
           </div>
